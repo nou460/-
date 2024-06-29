@@ -1,0 +1,1018 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="f23store.Site1" %>
+
+<html>
+<head>
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+
+    
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+       <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+</head>
+ 
+<body>
+    
+   <form id="f1" runat="server">
+     <!--===== HEADER =====-->
+     <header class="header-1" id="header">
+       
+       
+        <h4> BWP ONLINE SHOES STORE</h4>
+       
+        <nav class="navi">
+          
+            <a href="WebForm1.aspx" class="btnn">Home</a>
+            <a href="view the cart.aspx" class="btnn">Cart</a>
+            <a href="WebForm2.aspx" class="btnn">Manager</a>
+       
+           <select name="" id="section" class="btnn">
+           <option value="">All Sections</option>
+        <a href="#men"><option value="men" >Men</option> </a>   
+          <a href="women"><option value="women" >Women</option></a>  
+          <a href="kids" ><option value="kids">Kids</option></a> 
+
+           </select >
+       
+        </nav>
+        
+       
+       
+      
+    </header>
+    
+   
+    <main class="l-main">
+        <div id="men">
+         <!--===== FEATURED =====-->
+         <section class="featured section" id="featured">
+           
+            <h2 class="section-title"> Welcome To BWP Store!</h2>
+    
+            <br>
+            <h2 class="section-title">Take a look on our new collection for Men!</h2>
+            <div class="offer__container bd-grid">
+                <div class="offer__data">
+                    <h3 class="offer__title">50% OFF</h3>
+                    <p class="offer__description">Men Collection</p>
+                    <a href="#" class="button">Shop Now</a>
+                </div>
+    
+                <img src="images/shoes6.jpg" alt="" class="offer__img">
+                
+    
+            </div>
+             
+               <asp:ContentPlaceHolder ID="c1" runat="server">
+
+            
+         </asp:ContentPlaceHolder>
+            <button id="btn">^</button>
+            <br>
+
+            <br>
+            <br>
+            
+                <div class="featured__container bd-grid ">
+                    <div class="screen">
+                        <article class="sneaker">
+                            <div class="sneaker__sale">Sale</div>
+                            <img src="images/shoes2.jpg" alt="" class="sneaker__img">
+                            <span class="sneaker__name">Sneakers</span>
+                            <span class="sneaker__preci">Size:41</span>
+                            <span class="sneaker__preci">$45</span>
+                            <a href="Javascript:void(0)" class="button-light"> More details <i class='bx bx-right-arrow-alt button-icon'></i></a>
+                            <br />
+                            <button class="button-light">Add To Cart <i class='bx bx-right-arrow-alt button-icon'></i></button>
+                        </article> 
+                    </div>
+                 
+    <div class="screen">
+        <article class="sneaker">
+            <div class="sneaker__sale">Sale</div>
+            <img src="images/shoes3.jpg" alt="" class="sneaker__img">
+            <span class="sneaker__name">Men'shoes</span>
+            <span class="sneaker__preci">Size:42</span>
+            <span class="sneaker__preci">$30</span>
+            <a href="" class="button-light"> More details <i class='bx bx-right-arrow-alt button-icon'></i></a>
+                            <br />
+            <a href="" class="button-light">Add to Cart <i class='bx bx-right-arrow-alt button-icon'></i></a>
+        </article>
+    </div>
+                 
+    <div class="screen">
+        <article class="sneaker">
+            <div class="sneaker__sale">Sale</div>
+            <img src="images/shoes4.jpg" alt="" class="sneaker__img">
+            <span class="sneaker__name">Boots </span>
+            <span class="sneaker__preci">Size:42</span>
+            <span class="sneaker__preci">$25</span>
+            <a href="" class="button-light"> More details <i class='bx bx-right-arrow-alt button-icon'></i></a>
+                            <br />
+             <button class="button-light">Add To Cart <i class='bx bx-right-arrow-alt button-icon'></i></button>
+        </article>
+    </div>
+                   
+                </div>
+            </section>
+    
+            <!--===== COLLECTION =====-->
+            <section class="collection section">
+                <div class="collection__container bd-grid">
+                    <div class="collection__card">
+                        <div class="collection__data">
+                            <h3 class="collection__name">Boots</h3>
+                            <p class="collection__description">New collection 2024!</p>
+                            <span class="sneaker__preci">Size:41</span>
+                            <span class="sneaker__preci">$35</span>
+                          
+                             <a href="" class="button-light"> More details <i class='bx bx-right-arrow-alt button-icon'></i></a>
+                            <br />
+                            <button class="button-light">Add To Cart <i class='bx bx-right-arrow-alt button-icon'></i></button>
+                        </div>
+    
+                        <img src="images/shoes5.jpg" alt="" class="sneaker__img">
+                    </div>
+    
+                    <div class="collection__card">
+                        <div class="collection__data">
+                            <h3 class="collection__name">Shoes</h3>
+                            <p class="collection__description">New collection 2024!</p>
+                            <span class="sneaker__preci">Size:43</span>
+                            <span class="sneaker__preci">$32</span>
+                            <a href="" class="button-light"> More details <i class='bx bx-right-arrow-alt button-icon'></i></a>
+                            <br />
+                             <button class="button-light">Add To Cart <i class='bx bx-right-arrow-alt button-icon'></i></button>
+                        </div>
+    
+                        <img src="images/shoes1.jpg" alt="" class="sneaker__img">
+                    </div>
+                </div>
+            </section>
+    
+            <section class="collection section">
+                <div class="collection__container bd-grid">
+                    <div class="collection__card">
+                        <div class="collection__data">
+                            <h3 class="collection__name"> Men'Shoes</h3>
+                            <span class="sneaker__preci">Size:43</span>
+                            <span class="sneaker__preci">$24</span>
+                            <p class="collection__description">New!</p>
+                             <a href="" class="button-light"> More details <i class='bx bx-right-arrow-alt button-icon'></i></a>
+                            <br />
+                            <button class="button-light">Add To Cart <i class='bx bx-right-arrow-alt button-icon'></i></button>
+                        </div>
+    
+                        <img src="images/shoes.jpg" alt="" class="collection__img">
+                    </div>
+    
+                    <div class="collection__card">
+                        <div class="collection__data">
+                            <h3 class="collection__name">Shoes</h3>
+                            <p class="collection__description">New!</p>
+                            <span class="sneaker__preci">Size:42</span>
+                            <span class="sneaker__preci">$26</span>
+                             <a href="" class="button-light"> More details <i class='bx bx-right-arrow-alt button-icon'></i></a>
+                            <br />
+                             <button class="button-light">Add To Cart <i class='bx bx-right-arrow-alt button-icon'></i></button>
+                        </div>
+    
+                        <img src="images/shoes7.jpg" alt="" class="collection__img">
+                    </div>
+                </div>
+            </section>
+
+        </div>
+       
+        <!--===== baladi ya khal =====-->
+        <div id="women">
+            <section class="WOMEN SNEAKERS" id="women">
+                <h2 class="section-title">Women Collection!</h2>
+                <section class="offer section">
+                    <div class="offer__container bd-grid">
+                        <div class="offer__data">
+                            <h3 class="offer__title">50% OFF</h3>
+                            <p class="offer__description">Women Collction</p>
+                            <a href="#" class="button">Shop Now</a>
+                        </div>
+        
+                        <img src="images/photo(2).jpg" alt="" class="offer__img">
+                    </div>
+                </section>
+                <div class="women__container bd-grid">
+                    <article class="sneaker">
+                        <img src="images/girly3.jpg" alt="" class="sneaker__img">
+                        <span class="sneaker__name">Sneakers</span>
+                        <span class="sneaker__preci">Size:38</span>
+                        <span class="sneaker__preci">$23</span>
+                         <a href="" class="button-light"> More details <i class='bx bx-right-arrow-alt button-icon'></i></a>
+                            <br />
+                       <button class="button-light">Add To Cart <i class='bx bx-right-arrow-alt button-icon'></i></button>
+                    </article>
+    
+                    <article class="sneaker">
+                        <img src="images/girly5.jpg" alt="" class="sneaker__img">
+                        <span class="sneaker__name">Women'Boots</span>
+                        <span class="sneaker__preci">Size:39</span>
+                        <span class="sneaker__preci">$45</span>
+                         <a href="" class="button-light"> More details <i class='bx bx-right-arrow-alt button-icon'></i></a>
+                            <br />
+                        <button class="button-light">Add To Cart <i class='bx bx-right-arrow-alt button-icon'></i></button>
+                    </article>
+    
+                    <article class="sneaker">
+                        <img src="images/girly15.jpg" alt="" class="sneaker__img">
+                        <span class="sneaker__name">Sneakers</span>
+                        <span class="sneaker__preci">Size:39</span>
+                        <span class="sneaker__preci">$36</span>
+                         <a href="" class="button-light"> More details <i class='bx bx-right-arrow-alt button-icon'></i></a>
+                            <br />
+                       <button class="button-light">Add To Cart <i class='bx bx-right-arrow-alt button-icon'></i></button>
+                    </article>
+    
+                    <article class="sneaker">
+                        <img src="images/girly16.jpg" alt="" class="sneaker__img">
+                        <span class="sneaker__name">Women'Shoes</span>
+                        <span class="sneaker__preci">Size:38</span>
+                        <span class="sneaker__preci">$44</span>
+                         <a href="" class="button-light"> More details <i class='bx bx-right-arrow-alt button-icon'></i></a>
+                            <br />
+                        <button class="button-light">Add To Cart <i class='bx bx-right-arrow-alt button-icon'></i></button>
+                    </article>
+                </div>
+            </section>
+    
+            <!--===== OFFER =====-->
+           
+    
+            <!--===== NEW COLLECTION =====-->
+            <section class="new section" id="new">
+                <h2 class="section-title">NEW COLLECTION</h2>
+    
+                <div class="new__container bd-grid">
+                    <div class="new__mens">
+                        <div class="sneaker__sale">Sale</div>
+                        <img src="images/girly13.jpg" alt="" class="new__mens-img">
+                        <h3 class="new__title">Women collection Sales!</h3>
+    
+                        <span class="new__preci">From $20</span>
+                        <a href="#" class="button-light">
+                            View Collection
+                            <i class='bx bx-right-arrow-alt button-icon'></i>
+                        </a>
+                    </div>
+    
+                    <div class="new__sneaker">
+                     
+                        <div class="new__sneaker-card">
+                            <div class="sneaker__sale">Sale</div>
+                            <img src="images/girly9.jpg" alt="" class="new__sneaker-img">
+                            <div class="new__sneaker-overlay">
+                                 <a href="" class="button-light"> More details <i class='bx bx-right-arrow-alt button-icon'></i></a>
+                            <br />
+                                <button class="button-light">Add To Cart <i class='bx bx-right-arrow-alt button-icon'></i></button>
+                            </div>
+                        </div>
+    
+                        <div class="new__sneaker-card">
+                            <div class="sneaker__sale">Sale</div>
+                            <img src="images/girly8.jpg" alt="" class="new__sneaker-img">
+                            <div class="new__sneaker-overlay">
+                                 <a href="" class="button-light"> More details <i class='bx bx-right-arrow-alt button-icon'></i></a>
+                            <br />
+                               <button class="button-light">Add To Cart <i class='bx bx-right-arrow-alt button-icon'></i></button>
+                            </div>
+                        </div>
+    
+                        <div class="new__sneaker-card">
+                            <div class="sneaker__sale">Sale</div>
+                            <img src="images/girly11.jpg" alt="" class="new__sneaker-img">
+                            <div class="new__sneaker-overlay">
+                                 <a href="" class="button-light"> More details <i class='bx bx-right-arrow-alt button-icon'></i></a>
+                            <br />
+                                <button class="button-light">Add To Cart <i class='bx bx-right-arrow-alt button-icon'></i></button>
+                            </div>
+                        </div>
+    
+                        <div class="new__sneaker-card">
+                            <div class="sneaker__sale">Sale</div>
+                            <img src="images/girly12.jpg" alt="" class="new__sneaker-img">
+                            <div class="new__sneaker-overlay">
+                                 <a href="" class="button-light"> More details <i class='bx bx-right-arrow-alt button-icon'></i></a>
+                            <br />
+                                 <button class="button-light">Add To Cart <i class='bx bx-right-arrow-alt button-icon'></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+       
+        <div id="kids">
+            <h2 class="section-title">Kids COLLECTION</h2>
+            <div class="offer__container bd-grid">
+                <div class="offer__data">
+                    <h3 class="offer__title">30% OFF</h3>
+                    <p class="offer__description">Kids Collection</p>
+                    <a href="#" class="button">Shop Now</a>
+                </div>
+    
+                <img src="images/bbb.jpg" alt="" class="offer__img">
+                
+    
+            </div>
+    
+            <br>
+            <br>
+            <br>
+            
+                <div class="featured__container bd-grid">
+                    <article class="sneaker">
+                        <div class="sneaker__sale">Sale</div>
+                        <img src="images/bb1.jpg" alt="" class="sneaker__img">
+                        <span class="sneaker__name">Sneakers</span>
+                        <span class="sneaker__preci">Size:32</span>
+                        <span class="sneaker__preci">$15</span>
+                         <a href="" class="button-light"> More details <i class='bx bx-right-arrow-alt button-icon'></i></a>
+                            <br />
+                        <button class="button-light">Add To Cart <i class='bx bx-right-arrow-alt button-icon'></i></button>
+                    </article> 
+    
+                    <article class="sneaker">
+                        <div class="sneaker__sale">Sale</div>
+                        <img src="images/bb2.jpg" alt="" class="sneaker__img">
+                        <span class="sneaker__name">shoes</span>
+                        <span class="sneaker__preci">Size:33</span>
+                        <span class="sneaker__preci">$10</span>
+                         <a href="" class="button-light"> More details <i class='bx bx-right-arrow-alt button-icon'></i></a>
+                            <br />
+                       <button class="button-light">Add To Cart <i class='bx bx-right-arrow-alt button-icon'></i></button>
+                    </article>
+    
+                    <article class="sneaker">
+                        <div class="sneaker__sale">Sale</div>
+                        <img src="images/bb3.jpg" alt="" class="sneaker__img">
+                        <span class="sneaker__name">Boots </span>
+                       
+                        <span class="sneaker__preci">$20</span>
+                        <span class="sneaker__preci">Size:34</span>
+                         <a href="" class="button-light"> More details <i class='bx bx-right-arrow-alt button-icon'></i></a>
+                            <br />
+                       <button class="button-light">Add To Cart <i class='bx bx-right-arrow-alt button-icon'></i></button>
+                    </article>
+                </div>
+                <section class="collection section">
+                    <div class="collection__container bd-grid">
+                        <div class="collection__card">
+                            <div class="collection__data">
+                                <h3 class="collection__name">Boots</h3>
+                                <span class="sneaker__preci">Size:24</span>
+                                <span class="sneaker__preci">$13</span>
+                                <p class="collection__description">New collection 2024!</p>
+                                 <a href="" class="button-light"> More details <i class='bx bx-right-arrow-alt button-icon'></i></a>
+                            <br />
+                               <button class="button-light">Add To Cart <i class='bx bx-right-arrow-alt button-icon'></i></button>
+                            </div>
+        
+                            <img src="images/bb4.jpg" alt="" class="sneaker__img">
+                        </div>
+        
+                        <div class="collection__card">
+                            <div class="collection__data">
+                                <h3 class="collection__name">Shoes</h3>
+                                <p class="collection__description">New collection 2024!</p>
+                                <span class="sneaker__preci">Size:28</span>
+                                <span class="sneaker__preci">$17</span>
+                                 <a href="" class="button-light"> More details <i class='bx bx-right-arrow-alt button-icon'></i></a>
+                            <br />
+                               <button class="button-light">Add To Cart <i class='bx bx-right-arrow-alt button-icon'></i></button>
+                                    Add to cart
+                                    
+                                </a>
+                            </div>
+        
+                            <img src="images/bb5.jpg" alt="" class="sneaker__img">
+                        </div>
+                    </div>
+                </section>
+                <section class="collection section">
+                    <div class="collection__container bd-grid">
+                        <div class="collection__card">
+                            <div class="collection__data">
+                                <h3 class="collection__name">Boots</h3>
+                                <span class="sneaker__preci">Size:26</span>
+                                <span class="sneaker__preci">$20</span>
+                                <p class="collection__description">New collection 2024!</p>
+                                 <a href="" class="button-light"> More details <i class='bx bx-right-arrow-alt button-icon'></i></a>
+                            <br />
+                                <button class="button-light">Add To Cart <i class='bx bx-right-arrow-alt button-icon'></i></button>
+                            </div>
+        
+                            <img src="images/bb6.jpg" alt="" class="sneaker__img">
+                        </div>
+        
+                        <div class="collection__card">
+                            <div class="collection__data">
+                                <h3 class="collection__name">Shoes</h3>
+                                <p class="collection__description">New collection 2024!</p>
+                                <span class="sneaker__preci">Size:31</span>
+                                <span class="sneaker__preci">$19</span>
+                                 <a href="" class="button-light"> More details <i class='bx bx-right-arrow-alt button-icon'></i></a>
+                            <br />
+                                <button class="button-light">Add To Cart <i class='bx bx-right-arrow-alt button-icon'></i></button>
+                            </div>
+        
+                            <img src="images/bb7.jpg" alt="" class="sneaker__img">
+                        </div>
+                    </div>
+                </section>
+        
+        </div>
+       
+    </main>
+   
+       <style>
+                /*===== GOOGLE FONTS =====*/
+     @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+     /*===== VARIABLES CSS =====*/
+     :root {
+       --header-height: 3rem;
+     
+       /*===== Font weight =====*/
+       --font-medium: 500;
+       --font-semi-bold: 600;
+       --font-bold: 700;
+     
+       /*===== Colores =====*/
+       --dark-color: #141414;
+       --dark-color-light: #8a8a8a;
+       --dark-color-lighten: #f2f2f2;
+       --white-color: #fff;
+     
+       /*===== Font and typography =====*/
+       --body-font: "Poppins", sans-serif;
+       --big-font-size: 1.25rem;
+       --bigger-font-size: 1.5rem;
+       --biggest-font-size: 2rem;
+       --h2-font-size: 1.25rem;
+       --normal-font-size: 0.938rem;
+       --smaller-font-size: 0.813rem;
+     
+       /*===== Margenes =====*/
+       --mb-1: 0.5rem;
+       --mb-2: 1rem;
+       --mb-3: 1.5rem;
+       --mb-4: 2rem;
+       --mb-5: 2.5rem;
+       --mb-6: 3rem;
+     
+       /*===== z index =====*/
+       --z-fixed: 100;
+     
+     
+     }
+     
+     @media screen and (min-width: 768px) {
+       :root {
+         --big-font-size: 1.5rem;
+         --bigger-font-size: 2rem;
+         --biggest-font-size: 3rem;
+         --normal-font-size: 1rem;
+         --smaller-font-size: 0.875rem;
+       }
+     }
+     
+     /*===== BASE =====*/
+     
+  
+     *,
+     ::before,
+     ::after {
+       box-sizing: border-box;
+     }
+     
+     html {
+       scroll-behavior: smooth;
+     }
+     
+     body {
+      background-color: #96a3ec;
+      display: flex;
+       justify-content: center;
+       font-family: var(--body-font);
+       font-size: var(--normal-font-size);
+       font-weight: var(--font-medium);
+       color: var(--dark-color);
+       line-height: 1.6;
+     }
+     
+     h1,
+     h2,
+     h3,
+     p,
+     ul {
+      font-weight: var(--big-font-size);
+      font-size: larger;
+       margin: 0;
+       padding-right: 20px;
+       
+     }
+     
+     ul {
+       padding: 0;
+       list-style: none;
+     }
+     
+     a {
+       text-decoration: none;
+       color: var(--dark-color);
+       margin-right: 10px;
+     }
+     
+     img {
+       max-width: 100%;
+       height: auto;
+       display: block;
+     }
+     
+     /*===== CLASS CSS ===== */
+     .section {
+       padding: 5rem 0 2rem;
+     }
+     
+     .section-title {
+       position: relative;
+       font-size: var(--big-font-size);
+       margin-bottom: var(--mb-4);
+       text-align: center;
+       letter-spacing: 0.1rem;
+     }
+     
+     .section-title::after {
+       content: "";
+       position: absolute;
+       width: 56px;
+       height: 0.18rem;
+       top: -1rem;
+       left: 0;
+       right: 0;
+       margin: auto;
+       background-color: var(--dark-color);
+     }
+     
+     /*===== LAYOUT =====*/
+     .bd-grid {
+       max-width: 1024px;
+       display: grid;
+       grid-template-columns: 100%;
+       column-gap: 2rem;
+       width: calc(100% - 2rem);
+       display: flex;
+      justify-content: center;
+      cursor: pointer;
+     }
+     
+     .header-1 {
+       width: 100%;
+       position: fixed;
+       top: 0;
+       left: 0;
+       z-index: var(--z-fixed);
+       background-color: var(--dark-color-lighten);
+     }
+     
+     
+     /*BUTTONS*/
+     
+     .button {
+       display: inline-block;
+       background-color: var(--dark-color);
+       color: var(--white-color);
+       padding: 1.125rem 2rem;
+       border-radius: 0.5rem;
+       transition: 0.3s;
+       cursor: pointer;
+     }
+     
+     .button:hover {
+       transform: translateY(-0.25rem);
+       background-color: #8a8a8a;
+       
+     }
+     
+     .button-light {
+       display: inline-flex;
+       color: var(--dark-color);
+       font-weight: var(--font-bold);
+       align-items: center;
+     }
+     
+     .button-icon {
+       font-size: 1.25rem;
+       margin-left: var(--mb-1);
+       transition: 0.3s;
+     }
+     
+     .button-light:hover .button-icon {
+       transform: translateX(0.25rem);
+     }
+         
+     
+     /*===== FEATURED =====*/
+     .featured__container {
+       row-gap: 2rem;
+       grid-template-columns: repeat(auto-fit, minmax(220px), 1fr);
+     }
+     
+     .sneaker {
+       position: relative;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       padding: 2rem;
+       background-color: var(--dark-color-lighten);
+       border-radius: 0.5rem;
+       transition: 0.3s;
+     }
+     
+     
+
+     .sneaker__sale {
+       position: absolute;
+       left: 0.2rem;
+       top: 0.2rem;
+       background-color: var(--dark-color);
+       color: var(--white-color);
+       padding: 0.25rem 0.5rem;
+       border-radius: 0.25rem;
+       font-size: var(--h2-font-size);
+       
+       letter-spacing: 0.1rem;
+     }
+     
+     .sneaker__img {
+       width: 220px;
+       margin-top: var(--mb-3);
+       margin-bottom: var(--mb-6);
+      
+       filter: drop-shadow(0 12px 8px rgba(0, 0, 0, 0.2));
+     }
+     
+     .sneaker__name,
+     .sneaker__preci {
+       font-size: var(--h2-font-size);
+       letter-spacing: 0.1rem;
+       font-weight: var(--font-bold);
+     }
+     
+     .sneaker__name {
+       margin-bottom: var(--mb-1);
+     }
+     
+     .sneaker__preci {
+       margin-bottom: var(--mb-4);
+     }
+     
+     .sneaker:hover {
+ transform: scale(1.1,1.1);
+ transition: 1s;
+     }
+     
+     .sneaker__pages {
+       margin-top: var(--mb-6);
+     }
+     
+     .sneaker__pag {
+       padding: 0.5rem 1rem;
+       border: 1px solid var(--dark-color);
+       transition: 0.5s;
+     }
+     
+     .sneaker__pag:hover {
+      transform: scale(1.1,1.1);
+ transition: 1s;
+       background-color: var(--dark-color);
+       color: var(--white-color);
+     }
+     
+     /*===== COLLECTION =====*/
+     
+     .collection__container {
+       row-gap: 2rem;
+       justify-content: center;
+     }
+     
+     .collection__card {
+     
+       position: relative;
+       display: flex;
+       height: 328px;
+       background-color: var(--dark-color-lighten);
+       padding: 2rem;
+       border-radius: 0.5rem;
+       transition: 0.3s;
+     }
+     
+     .collection__data {
+       align-self: flex-end;
+     }
+     
+     .collection__name {
+       font-size: var(--bigger-font-size);
+       margin-bottom: 0.25rem;
+     }
+     
+     .collection_description {
+       margin-bottom: var(--mb-2);
+     }
+     
+     .collection__card:hover {
+      
+      transform: scale(1.1,1.1);
+      transition: 1s;
+     }
+     
+     /*=====  baladi ya khal =====*/
+     .women__container {
+       row-gap: 2rem;
+       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+     }
+     
+     /*===== OFFER =====*/
+     .offer__container {
+       grid-template-columns: 55% 45%;
+       column-gap: 0;
+       background-color: var(--dark-color-lighten);
+       border-radius: 0.5rem;
+       justify-content: center;
+       padding: 20px;
+     }
+     
+     .offer__data {
+       padding: 4rem 0 4rem 1.5rem;
+     }
+     
+     .offer__title {
+       font-size: var(--biggest-font-size);
+       margin-bottom: 0.25rem;
+     }
+     
+     .offer__description {
+       margin-bottom: var(--mb-3);
+       font-size: medium;
+     }
+     
+     .offer__img {
+       width: 620px;
+       height: 330px;
+     }
+     
+     /*===== NEW COLLECTION  =====*/
+     .new__container {
+       row-gap: 2rem;
+     }
+     
+     .new__mens/*slavery camp*/ {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       background-color: var(--dark-color-lighten);
+       border-radius: 0.5rem;
+       padding: 2rem;
+     }
+     
+     .slavery camp-img {
+       width: 276px;
+       margin-bottom: var(--mb-3);
+     }
+     
+     .new__title {
+       font-size: var(--bigger-font-size);
+       margin-bottom: 0.25rem;
+     }
+     
+     .new__preci {
+       display: block;
+       margin-bottom: var(--mb-3);
+     }
+     
+     .new__sneaker {
+       display: grid;
+       gap: 1.5rem;
+       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+     }
+     
+     .new__sneaker-card {
+       position: relative;
+       padding: 3.5rem 1.5rem;
+       background-color: var(--dark-color-lighten);
+       border-radius: 0.5rem;
+       overflow: hidden;
+       display: flex;
+       justify-content: center;
+     }
+     
+     .new__sneaker-img {
+       width: 220px;
+     }
+     
+     .new__sneaker-overlay {
+       position: absolute;
+       left: 0;
+       bottom: -100%;
+       width: 100%;
+       height: 100%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       background-color: rgba(138, 138, 138, 0.3);
+       transition: 0.3s;
+     }
+     
+     .new__sneaker-card:hover .new__sneaker-overlay {
+       bottom: 0;
+     }
+     
+     /*===== NEWSLETTER =====*/
+     .newsletter__container {
+       background-color: var(--dark-color);
+       color: var(--white-color);
+       padding: 2rem 0.5rem;
+       border-radius: 0.5rem;
+       text-align: center;
+     }
+     
+     .newsletter__input::placeholder {
+       color: var(--dark-color);
+       font-family: body-font;
+       font-size: var(--normal-font-size);
+       font-weight: var(--font-semi-bold);
+     }
+     
+     /*===== FOOTER =====*/
+     .footer__container {
+       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+     }
+     
+     .footer__box {
+       margin-bottom: var(--mb-4);
+     }
+     
+     .footer__title {
+       font-size: var(--big-font-size);
+     }
+     
+     .footer__link {
+       display: block;
+       width: max-content;
+       margin-bottom: var(--mb-1);
+     }
+     
+     .footer__social {
+       font-size: 1.5rem;
+       margin-right: 1.25rem;
+     }
+     
+     .footer__copy {
+       padding-top: 3rem;
+       font-size: var(--smaller-font-size);
+       color: var(--dark-color-light);
+       text-align: center;
+     }
+     
+     
+    
+    
+    .navbar
+    {
+       display: flex; 
+    
+       text-align: right;
+    }
+    h4
+    {
+      margin-right: 0px;
+      
+    }
+    .new-img
+    {
+      position: relative;
+     display: flex;
+     justify-content: center;
+
+    }
+    #btn
+    {
+      width: 40px;
+      height: 40px;
+      border: solid 1px #fff ;
+      border-radius: 50%;
+      background-color:#fff ;
+      cursor: pointer;
+     display: none;
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      
+
+    }
+   .button-i
+   {
+    position: fixed;
+    top: 10px;
+    right: 300px;
+    width: 40px;
+    height: 40px;
+   }
+   .navi
+   {
+    color: var(--dark-color);N
+    text-align: center;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+   }
+  .btnn
+  {
+    top: 0px;
+    border: none;
+    
+  }
+  .btnn:hover
+  {
+    background-color: #8a8a8a;
+    color: #fff;
+  }
+  #section
+  {
+    background-color: var(--dark-color-lighten);
+  }
+  #section:hover
+  {
+    background-color: #8a8a8a;
+    cursor: pointer;
+    color: #fff;
+  
+  }
+  
+ 
+   
+
+       </style>
+
+       <script>
+
+           let btn = document.getElementById('btn');
+           window.onscroll = function () {
+               if (scrollY >= 400) {
+                   btn.style.display = 'block';
+               } else {
+                   btn.style.display = 'none';
+               }
+           }
+           btn.onclick = function () {
+               scroll(
+                   {
+                       left: 0,
+                       top: 0,
+                       behavior: "smooth"
+                   }
+               )
+           }
+
+           let menn = document.getElementById('menn');
+           menn.onclick = function () {
+               scroll(
+                   {
+                       left: 0,
+                       top: 0,
+                       behavior: "smooth"
+                   }
+               )
+           }
+       </script>
+    
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+ <script src="main.js"></script>
+        <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <!-- sidebar -->
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/custom.js"></script> <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <!-- sidebar -->
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/custom.js"></script>
+       </form>
+</body>
+</html>
